@@ -1,0 +1,21 @@
+{
+  "receiptId": 10,
+  "intentId": 8,
+  "policyId": 3,
+  "status": "FAILURE",
+  "reasonCode": "SUPPLIER_NOT_ALLOWLISTED",
+  "conditionPassed": false,
+  "executed": false,
+  "supplier": "0x2222222222222222222222222222222222222222",
+  "amount": "5000000",
+  "token": "0x4a05a790aA0B03cb40e9b4bFb27075f524d19bAb",
+  "quoteHash": "0x496df11003445ae09654a478f89e1d5ca81c15e951db9088d7d51d9a28ea956b",
+  "metadataHash": "0x20a1664fd6030e9f30fd9619b3ffdb955ec24a547a182cee6ca9528e29f7c178",
+  "timestamp": "2026-02-13T00:13:33.000Z",
+  "why": "Supplier failed allowlist guardrail.",
+  "evidence": {
+    "encryptionMode": "bite-v2",
+    "txHash": "0x5b106bf9521abbaba85aafebb22670f219a1ead5fdb063dc7fa6ee95caf48f8e",
+    "ctxSender": "0x234C3cbaAd56E337Df54C1119f2BE494c39F91cd"
+  }
+}

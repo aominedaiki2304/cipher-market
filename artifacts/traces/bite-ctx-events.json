@@ -1,0 +1,35 @@
+[
+  {
+    "ts": "2026-02-13T09:28:50.868Z",
+    "stage": "market_created",
+    "details": {
+      "marketId": 7,
+      "questionHash": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "closeTime": 1770976730
+    }
+  },
+  {
+    "ts": "2026-02-13T09:28:50.868Z",
+    "stage": "order_encrypted",
+    "details": {
+      "orderId": 41,
+      "encryptedPayloadPreview": "0xf8a580a4...",
+      "commitmentHash": "0xcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  },
+  {
+    "ts": "2026-02-13T09:28:50.868Z",
+    "stage": "ctx_batch_triggered",
+    "details": {
+      "batchId": 3,
+      "submitCTXAddress": "0x000000000000000000000000000000000000001B"
+    }
+  },
+  {
+    "ts": "2026-02-13T09:28:50.868Z",
+    "stage": "resolution_finalized",
+    "details": {
+      "outcome": "YES"
+    }
+  }
+]

@@ -1,0 +1,16 @@
+node_modules
+.env
+.env.*
+!.env.example
+.env.local
+.DS_Store
+*.log
+dist
+coverage
+out
+artifacts/tmp
+apps/web/node_modules
+apps/api/node_modules
+contracts/lib
+contracts/out
+contracts/cache

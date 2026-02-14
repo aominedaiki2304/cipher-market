@@ -1,0 +1,64 @@
+{
+  "generatedAt": "2026-02-13T11:42:46.572Z",
+  "chainId": 103698795,
+  "rpcUrl": "https://base-sepolia-testnet.skalenodes.com/v1/bite-v2-sandbox",
+  "contractAddress": "0x0abDC1637FB25aBf4ADE64E09680E798EdfC64C4",
+  "traderA": "0x34676Ff553357C1B2887c6FBaaFa6f9270D6ee92",
+  "traderB": "0x616A40E6eDA4cd19813ed97871417FC5951a0977",
+  "attestor": "0x616A40E6eDA4cd19813ed97871417FC5951a0977",
+  "marketId": 1,
+  "tx": {
+    "createMarket": "0x80115083de860ef67fe0b02b40e85bddad3dfcb6f1ade03d919d0f8f49b79e0d",
+    "approveA": "0xe57f8be400b03d86622b5bef980a2d757723d238503abbf9c6e3cb1dc18699ed",
+    "approveB": "0xef853fa56e3156c148520f1976edcfd12677666b250ff910c2f50cabbe58c3be",
+    "submitOrderA": "0xa63f10a195e6e035c273f353f5894b8f0ad806403c7680f571bf0d9b15ba77eb",
+    "submitOrderB": "0x30922de3024a5c7c892ac97586b3dc91551982ae51e18f3a78a81926a2e850bf"
+  },
+  "ids": {
+    "orderA": 1,
+    "orderB": 2
+  },
+  "encryption": {
+    "orderA": {
+      "mode": "bite-v2",
+      "encryptionError": null
+    },
+    "orderB": {
+      "mode": "bite-v2",
+      "encryptionError": null
+    }
+  },
+  "assertions": {
+    "marketCreated": true,
+    "stateOpen": true,
+    "orderATraderMatches": true,
+    "orderBTraderMatches": true,
+    "orderCommitmentAMatches": true,
+    "orderCommitmentBMatches": true
+  },
+  "balancesBefore": {
+    "traderA": {
+      "address": "0x34676Ff553357C1B2887c6FBaaFa6f9270D6ee92",
+      "native": "4.98999574529576",
+      "usdc": "9899.9"
+    },
+    "traderB": {
+      "address": "0x616A40E6eDA4cd19813ed97871417FC5951a0977",
+      "native": "0.01",
+      "usdc": "100.1"
+    }
+  },
+  "balancesAfter": {
+    "traderA": {
+      "address": "0x34676Ff553357C1B2887c6FBaaFa6f9270D6ee92",
+      "native": "4.98999563345204",
+      "usdc": "9898.9"
+    },
+    "traderB": {
+      "address": "0x616A40E6eDA4cd19813ed97871417FC5951a0977",
+      "native": "0.00999993120832",
+      "usdc": "99.1"
+    }
+  },
+  "createReceiptStatus": "success"
+}

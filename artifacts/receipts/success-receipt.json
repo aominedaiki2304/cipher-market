@@ -1,0 +1,21 @@
+{
+  "receiptId": 9,
+  "intentId": 7,
+  "policyId": 3,
+  "status": "SUCCESS",
+  "reasonCode": "EXECUTED",
+  "conditionPassed": true,
+  "executed": true,
+  "supplier": "0x1111111111111111111111111111111111111111",
+  "amount": "5000000",
+  "token": "0x4a05a790aA0B03cb40e9b4bFb27075f524d19bAb",
+  "quoteHash": "0xf0efb68e559d513020dbcbcd88ed33b29a96cab0493fbee00258e339ace7e4c8",
+  "metadataHash": "0x61d1cbe5b3bf0532330592a9c06b80bf5f1fe82f0b14638ab3855fdb6f5f7a8d",
+  "timestamp": "2026-02-13T00:13:22.000Z",
+  "why": "Attestation valid and all policy checks passed.",
+  "evidence": {
+    "encryptionMode": "bite-v2",
+    "txHash": "0x9be6ac2a7e72417676a95f3d6546a632d46562ddcd410c8f74dc20f958b65646",
+    "ctxSender": "0xCb0EecFe9f5414afCAF9C44A9789451D21dC8183"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "private-prediction-market-ctx",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BITE v2 private prediction markets with conditional execution and auditable receipts.",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w apps/api\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build -w apps/api && npm run build --prefix frontend",
+    "test": "npm run test -w apps/api",
+    "deploy:doctor": "node scripts/deploy-doctor.mjs",
+    "deploy:contract": "node scripts/deploy-private-prediction-market.mjs",
+    "dev:legacy-web": "npm run dev -w apps/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "@skalenetwork/bite-solidity": "^0.0.1",
+    "solc": "^0.8.33"
+  }
+}

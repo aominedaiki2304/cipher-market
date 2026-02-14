@@ -1,0 +1,21 @@
+{
+  "marketId": 7,
+  "token": "0xc4083B1E81ceb461Ccef3FDa8A9F24F0d764B6D8",
+  "evidenceHash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "timestamp": "2026-02-13T09:28:50.868Z",
+  "evidence": {
+    "encryptionMode": "bite-v2",
+    "txHash": "0xfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeed",
+    "ctxSender": "0x000000000000000000000000000000000000001B"
+  },
+  "receiptId": 202,
+  "orderId": 42,
+  "trader": "0x2222222222222222222222222222222222222222",
+  "status": "FAILURE",
+  "reasonCode": "STAKE_OVER_LIMIT",
+  "conditionPassed": false,
+  "executed": false,
+  "side": "NONE",
+  "amount": "10000000",
+  "why": "Stake exceeded max stake per order."
+}

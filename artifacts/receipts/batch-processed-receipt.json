@@ -1,0 +1,21 @@
+{
+  "marketId": 7,
+  "token": "0xc4083B1E81ceb461Ccef3FDa8A9F24F0d764B6D8",
+  "evidenceHash": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "timestamp": "2026-02-13T09:28:50.868Z",
+  "evidence": {
+    "encryptionMode": "bite-v2",
+    "txHash": "0xfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeedfeed",
+    "ctxSender": "0x000000000000000000000000000000000000001B"
+  },
+  "receiptId": 203,
+  "orderId": 0,
+  "trader": "0x0000000000000000000000000000000000000000",
+  "status": "SUCCESS",
+  "reasonCode": "NONE",
+  "conditionPassed": true,
+  "executed": true,
+  "side": "NONE",
+  "amount": "0",
+  "why": "Batch decrypt callback completed."
+}

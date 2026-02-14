@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-02-14T01:22:57.726Z",
+  "chainId": 103698795,
+  "rpcUrl": "https://base-sepolia-testnet.skalenodes.com/v1/bite-v2-sandbox",
+  "contractAddress": "0x4f6c396A26EBE815c5A0f310F8FAF13F45bc39EE",
+  "scenarios": [
+    {
+      "name": "sealed-limit-batch-and-confidential-resolution",
+      "ok": true,
+      "marketId": 20,
+      "orderIds": {
+        "O1_valid_yes_A": 82,
+        "O4_trader_mismatch_D": 84,
+        "O5_limit_not_met_E": 83,
+        "O3_commitment_mismatch_C": 86,
+        "O2_valid_no_B": 85
+      },
+      "checks": [
+        {
+          "name": "batch_trigger_wrong_signer_reverts",
+          "ok": true
+        },
+        {
+          "name": "batch_trigger_expired_reverts",
+          "ok": true
+        },
+        {
+          "name": "batch_trigger_wrong_root_reverts",
+          "ok": true
+        },
+        {
+          "name": "batch_processed",
+          "ok": true,
+          "lastState": 3
+        },
+        {
+          "name": "clearing_price_expected_6000",
+          "ok": true
+        },
+        {
+          "name": "order1_filled",
+          "ok": true
+        },
+        {
+          "name": "reason_O4_trader_mismatch_D",
+          "ok": true
+        },
+        {
+          "name": "reason_O5_limit_not_met_E",
+          "ok": true
+        },
+        {
+          "name": "reason_O3_commitment_mismatch_C",
+          "ok": true
+        },
+        {
+          "name": "order2_filled",
+          "ok": true
+        },
+        {
+          "name": "claim_before_resolved_reverts",
+          "ok": true
+        },
+        {
+          "name": "commit_outcome_unauthorized_reverts",
+          "ok": true
+        },
+        {
+          "name": "outcome_trigger_wrong_signer_reverts",
+          "ok": true
+        },
+        {
+          "name": "resolution_proposed",
+          "ok": true,
+          "lastState": 6
+        },
+        {
+          "name": "resolved",
+          "ok": true
+        },
+        {
+          "name": "claim_delta_TRADER_A",
+          "ok": true
+        },
+        {
+          "name": "claim_delta_TRADER_B",
+          "ok": true
+        },
+        {
+          "name": "claim_delta_TRADER_C",
+          "ok": true
+        },
+        {
+          "name": "claim_delta_TRADER_D",
+          "ok": true
+        },
+        {
+          "name": "claim_delta_TRADER_E",
+          "ok": true
+        },
+        {
+          "name": "double_claim_reverts",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "unmatched-all-yes-refunds",
+      "ok": true,
+      "marketId": 21,
+      "orderIds": [
+        87,
+        88,
+        91,
+        90,
+        89
+      ],
+      "checks": [
+        {
+          "name": "batch_processed",
+          "ok": true,
+          "lastState": 3
+        },
+        {
+          "name": "matchedLots_is_zero",
+          "ok": true
+        },
+        {
+          "name": "order_87_unmatched",
+          "ok": true
+        },
+        {
+          "name": "order_88_unmatched",
+          "ok": true
+        },
+        {
+          "name": "order_91_unmatched",
+          "ok": true
+        },
+        {
+          "name": "order_90_unmatched",
+          "ok": true
+        },
+        {
+          "name": "order_89_unmatched",
+          "ok": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-02-13T19:57:16.586Z",
+  "chainId": 103698795,
+  "rpcUrl": "https://base-sepolia-testnet.skalenodes.com/v1/bite-v2-sandbox",
+  "contractAddress": "0x0abDC1637FB25aBf4ADE64E09680E798EdfC64C4",
+  "marketId": 32,
+  "orderIds": [
+    8,
+    9
+  ],
+  "setup": {
+    "marketId": 32,
+    "orderIds": [
+      8,
+      9
+    ],
+    "closeTime": 1771012606,
+    "orderDepositUnit": "1",
+    "stakes": {
+      "traderA": "0.7",
+      "traderB": "0.4"
+    },
+    "encryption": {
+      "orderA": {
+        "mode": "bite-v2",
+        "encryptionError": null
+      },
+      "orderB": {
+        "mode": "bite-v2",
+        "encryptionError": null
+      }
+    },
+    "tx": {
+      "createMarket": "0x7a6d642257ba49f128cf0acb33138aa7cd0d392d3b47a4105db0ff6a5bb161d8",
+      "approveA": "0xed24985d13612f4180b5207ca42913f08e56e5a60a01ab4150ecc6879715c59f",
+      "approveB": "0x36e143e6c0fac0a78cdab0e43ee24f546369547bd003ade52898c65fbb12fada",
+      "submitOrderA": "0x80efa67d1f3f6848a48d17b303173dd22985636446c89229720e89e34793e7ca",
+      "submitOrderB": "0x62793e302e0bb9336ef38c5ee23d5b01923885e66a49d8f99050c62f36efa12b"
+    }
+  },
+  "triggerResult": {
+    "skipped": false,
+    "batchId": 6,
+    "expiry": 1771014409,
+    "ordersRoot": "0x5b70da963e912138c76bd27bb638deb2f7f58e14cc537e2d2e7c34f8b6495680",
+    "digest": "0xa2fbc4f1ba6568596b0da09008e8efe8bfb3d1c194f1292190b764450ec491d0",
+    "signature": "0x6a4d29a73bde09fe54a1fa72bd3ccf8bfcd8b2333db1cef0b6bd960e0589561677b995553c3aec7a0eda10364db0a4d0c5c2a722521f7bc26edf9e8a953467b81b",
+    "triggerTx": "0x2d46bda3f0ac102e5d93ec03b0ff9c027bce2699e07ef1ea33c1f2085f269810",
+    "triggerValueEth": "0.06",
+    "funded": {
+      "skipped": true,
+      "reason": "paid_in_trigger"
+    }
+  },
+  "resolutionResult": {
+    "proposeTx": "0x872d41f2f8770ea9e3ab4e06678808ecdd44ff4f655d9e7c9e1bc321887e8cbb",
+    "overrideTx": "0xd2575277d42b283139a39c6459723b8406aa4dac1183e62895c8bcb2cf78d546",
+    "skipped": false,
+    "digest": "0xb86073aad1b9be7d452d78efc67b0ea365ccc56a8bbb7c9dce8b715818073171",
+    "evidenceHash": "0xe802986f3e2237b00f86bb3c09ba1a31f3182ab5e201507a739fb71585953f53",
+    "overrideReasonHash": "0x059019ac62e704abdcb8e4ad0d8c50ef019dd198f284fc96eb83567cc7f9a68e"
+  },
+  "claimResult": {
+    "traderA": {
+      "claimed": true,
+      "tx": "0x99c4410d03faea9659bcf70b3e5a9017f855108cd8ae52fc88f515233a2f6693",
+      "skipped": false
+    },
+    "traderB": {
+      "claimed": true,
+      "tx": "0x208a8eb01eb6f2e4f4956e4c01932252a1d618440962fbd3d0d5df72bf8fc436",
+      "skipped": false
+    }
+  },
+  "marketStateAfter": 6,
+  "finalOutcome": 1,
+  "positionsAfter": {
+    "traderA": {
+      "yesStake": "0.7",
+      "noStake": "0",
+      "refundable": "0.3",
+      "claimed": true
+    },
+    "traderB": {
+      "yesStake": "0",
+      "noStake": "0.4",
+      "refundable": "0.6",
+      "claimed": true
+    }
+  },
+  "balancesBefore": {
+    "traderA": {
+      "address": "0x34676Ff553357C1B2887c6FBaaFa6f9270D6ee92",
+      "native": "4.6899937091006",
+      "usdc": "8995.3"
+    },
+    "traderB": {
+      "address": "0x616A40E6eDA4cd19813ed97871417FC5951a0977",
+      "native": "0.00999974498944",
+      "usdc": "997.7"
+    }
+  },
+  "balancesAfter": {
+    "traderA": {
+      "address": "0x34676Ff553357C1B2887c6FBaaFa6f9270D6ee92",
+      "native": "4.6299935940578",
+      "usdc": "8996.7"
+    },
+    "traderB": {
+      "address": "0x616A40E6eDA4cd19813ed97871417FC5951a0977",
+      "native": "0.00999971872504",
+      "usdc": "998.3"
+    }
+  }
+}

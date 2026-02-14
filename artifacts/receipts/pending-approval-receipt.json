@@ -1,0 +1,21 @@
+{
+  "receiptId": 11,
+  "intentId": 9,
+  "policyId": 3,
+  "status": "PENDING_APPROVAL",
+  "reasonCode": "MANUAL_APPROVAL_REQUIRED",
+  "conditionPassed": true,
+  "executed": false,
+  "supplier": "0x1111111111111111111111111111111111111111",
+  "amount": "20000000",
+  "token": "0x4a05a790aA0B03cb40e9b4bFb27075f524d19bAb",
+  "quoteHash": "0x14581ab8334ab4690b7dd0038c16e930db2182dd32eb2790018d8ec74ed31323",
+  "metadataHash": "0xd0d1d1a64f82f4464c58050dd5d5e8b3708a712e703882184beb1b845e76ff42",
+  "timestamp": "2026-02-13T00:13:46.000Z",
+  "why": "Amount exceeded manual approval threshold.",
+  "evidence": {
+    "encryptionMode": "bite-v2",
+    "txHash": "0x2df4bf1e7d550c4b9250c16e8b0cf98a9763af1a2290a6d87fcbb2a7efcf2ad0",
+    "ctxSender": "0xF0C25733a12E1a488D8fa86A5376CAc9294cE33d"
+  }
+}

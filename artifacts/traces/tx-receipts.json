@@ -1,0 +1,12 @@
+[
+  {
+    "txHash": "0xaaaabbbbccccddddeeeeffff0000111122223333444455556666777788889999",
+    "stage": "createMarket",
+    "status": "confirmed"
+  },
+  {
+    "txHash": "0x9999888877776666555544443333222211110000ffffeeeeddddccccbbbbaaaa",
+    "stage": "triggerBatchDecrypt",
+    "status": "confirmed"
+  }
+]
