@@ -441,9 +441,17 @@ export async function fetchOnchainMarkets(): Promise<OnchainMarketView[]> {
     return [];
   }
 
+  // Scanning every market from 1..nextMarketId gets slow once the relayer has created many
+  // short-lived demo markets. For UI purposes we only need the most recent N.
+  const scanLimit = Number(import.meta.env.VITE_MARKET_SCAN_LIMIT || 40);
+  const capped = Number.isFinite(scanLimit) ? Math.max(5, Math.min(250, Math.trunc(scanLimit))) : 40;
+  const lastId = nextMarketId - 1n;
+  const firstId = lastId > BigInt(capped) ? lastId - BigInt(capped) + 1n : 1n;
+
   const ids: bigint[] = [];
-  for (let i = 1n; i < nextMarketId; i++) {
+  for (let i = lastId; i >= firstId; i--) {
     ids.push(i);
+    if (i === 1n) break;
   }
 
   const rawMarkets = await Promise.all(

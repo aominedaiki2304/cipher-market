@@ -5,6 +5,9 @@ export function useOnchainMarkets() {
   return useQuery({
     queryKey: ["onchain-markets"],
     queryFn: fetchOnchainMarkets,
+    // Avoid blanking the UI while refetching; keep prior data.
+    placeholderData: (prev) => prev,
+    staleTime: 10_000,
     refetchInterval: 15_000
   });
 }
