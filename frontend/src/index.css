@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 7%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 18% 10%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 18% 10%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 222 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 16% 16%;
+    --secondary-foreground: 210 20% 92%;
+
+    --muted: 220 16% 14%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 220 16% 16%;
+    --accent-foreground: 210 20% 92%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 18%;
+    --input: 220 14% 18%;
+    --ring: 222 80% 55%;
+
+    --radius: 0.5rem;
+
+    /* CipherMarket custom tokens */
+    --cm-yes: 152 45% 42%;
+    --cm-yes-light: 152 30% 16%;
+    --cm-no: 0 40% 45%;
+    --cm-no-light: 0 25% 17%;
+    --cm-surface: 220 18% 10%;
+    --cm-surface-hover: 220 16% 13%;
+    --cm-border: 220 14% 18%;
+    --cm-border-light: 220 14% 15%;
+    --cm-text-primary: 210 20% 92%;
+    --cm-text-secondary: 220 10% 50%;
+    --cm-text-tertiary: 220 10% 38%;
+    --cm-blue: 222 80% 55%;
+    --cm-blue-light: 222 60% 16%;
+    --cm-header-border: 220 14% 16%;
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 210 20% 92%;
+    --sidebar-primary: 222 80% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 16% 14%;
+    --sidebar-accent-foreground: 210 20% 92%;
+    --sidebar-border: 220 14% 18%;
+    --sidebar-ring: 222 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
